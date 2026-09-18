@@ -1,0 +1,38 @@
+name: Kiss
+version: 1.0.0
+main: com.example.kiss.KissPlugin
+api-version: 1.17
+author: YourName
+description: 亲吻/拥抱互动插件
+
+commands:
+  kiss:
+    description: 亲吻其他玩家
+    usage: /kiss <玩家名>
+    aliases: [k, kissu]
+  hug:
+    description: 拥抱其他玩家
+    usage: /hug <玩家名>
+    aliases: [h, hugu]
+  lick:
+    description: 舔其他玩家
+    usage: /lick <玩家名>
+    aliases: [l]
+  kissadmin:
+    description: 管理亲吻插件
+    usage: /kissadmin reload
+    permission: kiss.admin
+
+permissions:
+  kiss.*:
+    description: 所有权限
+    default: op
+    children:
+      kiss.use: true
+      kiss.admin: true
+  kiss.use:
+    description: 使用亲吻命令
+    default: true
+  kiss.admin:
+    description: 管理员权限
+    default: op

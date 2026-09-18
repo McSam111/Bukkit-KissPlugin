@@ -1,0 +1,46 @@
+# Kiss插件配置文件
+
+# 是否播放粒子效果
+particles:
+  enabled: true
+  type: "HEART"  # HEART, CLOUD, NOTE, SPELL_WITCH, END_ROD
+
+# 是否播放声音
+sounds:
+  enabled: true
+  kiss: "ENTITY_VILLAGER_YES"  # 亲吻声音
+  hug: "ENTITY_LLAMA_EAT"       # 拥抱声音
+  lick: "ENTITY_SLIME_SQUISH"   # 舔的声音
+
+# 是否在动作栏显示消息
+action-bar: true
+
+# 冷却时间（秒）
+cooldown: 3
+
+# 消息配置
+messages:
+  prefix: "&8[&d&lKiss&8] &r"
+  no-permission: "&c你没有权限执行此命令！"
+  player-only: "&c此命令只能由玩家执行！"
+  player-not-found: "&c找不到玩家 {player}！"
+  cannot-kiss-self: "&c你不能亲吻自己！"
+  cooldown: "&c冷却中！请等待 {time} 秒后再试。"
+  
+  # 亲吻消息
+  kiss-sender: "&d你亲吻了 &e{target} &d！(/ω＼)"
+  kiss-target: "&d{player} &d亲吻了你！(/ω＼)"
+  kiss-broadcast: "&d{player} &d亲吻了 &e{target} &d！(/ω＼)"
+  
+  # 拥抱消息
+  hug-sender: "&d你拥抱了 &e{target} &d！(｡♥‿♥｡)"
+  hug-target: "&d{player} &d拥抱了你！(｡♥‿♥｡)"
+  hug-broadcast: "&d{player} &d拥抱了 &e{target} &d！(｡♥‿♥｡)"
+  
+  # 舔消息
+  lick-sender: "&d你舔了 &e{target} &d一下！(*/ω＼*)"
+  lick-target: "&d{player} &d舔了你一下！(*/ω＼*)"
+  lick-broadcast: "&d{player} &d舔了 &e{target} &d一下！(*/ω＼*)"
+  
+  # 管理员命令
+  reload-success: "&a配置文件已重载！"
